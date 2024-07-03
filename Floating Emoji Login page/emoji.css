@@ -1,0 +1,95 @@
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+.container {
+    background-image: url('imgs/11.png');
+    height: 94vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login-box {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    z-index: 2;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.textbox {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.btn {
+    width: 100%;
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+
+
+@keyframes floating {
+    from {
+        transform: translateY(100vh);
+    }
+
+    to {
+        transform: translateY(-200vh);
+    }
+}
+
+.emoji {
+    position: absolute;
+    font-size: 30px;
+    animation: floating 10s linear infinite;
+    z-index: 0;
+}
+
+.emoji:nth-child(odd) {
+    animation-duration: 12s;
+}
+
+.emoji:nth-child(even) {
+    animation-duration: 8s;
+} 

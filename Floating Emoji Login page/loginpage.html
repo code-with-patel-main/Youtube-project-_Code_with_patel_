@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remake login</title>
+    <link rel="stylesheet" href="emoji.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form method="post">
+                <div class="textbox">
+                    <input type="text" placeholder="Username" name="username">
+                </div>
+                <div class="textbox">
+                    <input type="text" placeholder="Enter your email" name="email">
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Password" name="password">
+                </div>
+                <input type="submit" value="Login" class="btn" name="save_btn">
+                <!-- <button type="submit" class="btn">Login</button> -->
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        const emojis = ["🎈","🎆","🎇","🧨","✨","🎉","🎊","🎀","🎁","🎂","🕯","🪔","🪁","🕯","🕯️","🍾","🎋","🥳","🎈","🎆","🎇","🧨","✨","🎉","🎊","🎀","🎁","🎂","🕯","🪔","🪁","🕯","🕯️","🍾","🎋","🥳"];
+
+        window.onload = function () {
+            const body = document.body;
+
+
+            for (let i = 0; i < 50; i++) {
+                const emoji = document.createElement('div');
+                emoji.classList.add('emoji');
+                emoji.style.left = `${Math.random() * 100}vw`;
+                emoji.style.animationDelay = `${Math.random() * 5}s`;
+                emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+                body.appendChild(emoji);
+            }
+        };
+    </script>
+</body>
+
+</html>
