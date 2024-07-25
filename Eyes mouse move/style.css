@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  boz-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: black;
+}
+@property --eyelid {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --eyelid2 {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+.eyes {
+  width: 250px;
+  padding-block: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  
+  div {
+    position: relative;
+    width: 90px;
+    aspect-ratio: 1;
+    background: white;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      width: 116%;
+      height: 165%;
+      left: 50%;
+      animation: eyelid 5s ease-in-out infinite;
+      z-index: 1;
+    }
+    &:before {
+      top: 0;
+      border-radius: 0% 0% 40% 40%;
+      transform: translateY(var(--eyelid)) translateX(-50%);
+      border-bottom: 40px solid black;
+    }
+    &:after {
+      bottom: 0;
+      border-radius: 40% 40% 0% 0%;
+      transform: translateY(var(--eyelid2)) translateX(-50%);
+      border-top: 40px solid black;
+    }
+    i {
+      position: absolute;
+      width: 60px;
+      aspect-ratio: inherit;
+      background: black;
+      border-radius: inherit;
+    }
+  }
+}
+
+@keyframes eyelid {
+  0% {
+    --eyelid: -50%;
+    --eyelid2: 50%;
+  }
+  3% {
+    --eyelid: 0%;
+    --eyelid2: 0%;
+  }
+  6% {
+    --eyelid: -50%;
+    --eyelid2: 50%;
+  }
+  9%,100% {
+    --eyelid: 0%;
+    --eyelid2: 0%;
+  }
+}
