@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    
+
+        <section class="main">
+            <div class="con">
+                <video autoplay loop muted plays-inline class="background">
+                    <source src="light.mp4" type="video/mp4">
+                </video>
+                <H1>Happy Janmashtami</h1>
+                
+            </div>
+           
+            <div class="container">
+                <div class="inner-box">
+                    <img src="M.png" class="krishna">
+                    <img src="K.png" class="krishnaimg">
+                    <img src="matki.png" class="matki">
+                    <img src="matki.png" class="matki2">
+                    
+                </div>
+            </div>
+        </section>
+        <H3>Radhe Radhe</h3>    
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $(".krishna").animate({top: "+=300"}, 2000);
+            $(".krishnaimg").animate({top: "-=1170"}, 4000);
+            $(".matki").animate({top: "-=800"}, 5000);
+            $(".matki2").animate({top: "-=800"}, 5000);
+            $("h1").animate({left: "+=1720"}, 5000);
+            $("h3").animate({left: "+=1920"}, 5000);
+        });
+        </script>
+</body>
+</html>

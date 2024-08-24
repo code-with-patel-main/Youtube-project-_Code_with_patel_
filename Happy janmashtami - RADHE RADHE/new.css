@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.con{
+   width:100%;
+   height: 100vh; 
+   background-color:rgba(0,0,0,0.4);
+}
+
+.background{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media(min-aspect-ratio:16/9){
+    .background{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio:16/9){
+    .background{
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.inner-box{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+.krishna{
+	width: 400px;
+	position: absolute;
+	top: -1000px;
+	Left: 35%;
+}
+.krishnaimg{
+	width: 400px;
+	position: absolute;
+	bottom: -100px;
+	Left: 35%;
+}
+.con h1{
+	font-size: 80px;
+	position: absolute;
+	bottom: 150px;
+	left: -100%;
+	color: #ffffff;
+
+}
+h3{
+	font-size: 50px;
+	position: absolute;
+	bottom: 90px;
+	left: -100%;
+	color: #ffffff;
+
+}
+.matki{
+	width: 200px;
+	position: absolute;
+	bottom: -100px;
+	Left: 25%;
+}
+.matki2{
+	width: 200px;
+	position: absolute;
+	bottom: -100px;
+	Left: 65%;
+}
