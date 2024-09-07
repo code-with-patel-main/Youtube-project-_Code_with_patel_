@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+
+
+        <section class="main">
+            <div class="con">
+                <video autoplay loop muted plays-inline class="background">
+                    <source src="Background.mp4" type="video/mp4">
+                </video>
+                <H1>Happy Ganesh Chaturthi</h1>
+                
+            </div>
+           
+            <div class="container">
+                <div class="inner-box">
+
+                    <img src="G.png" class="ganesha">
+                    <img src="M.png" class="mushak">
+                    <img src="M2.png" class="mushak2">
+                    
+                </div>
+            </div>
+        </section>
+        <H4>May Lord Ganesha bless you with joy, prosperity, and success this Ganesh Chaturthi.</h4>    
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $(".ganesha").animate({top: "+=320"}, 2000);
+            $(".mushak").animate({top: "-=1080"}, 4000);
+            $(".mushak2").animate({top: "-=1080"}, 4000);
+            $("h1").animate({left: "+=1600"}, 5000);
+            $("h4").animate({left: "+=1500"}, 5000);
+        });
+        </script>
+</body>
+</html>
