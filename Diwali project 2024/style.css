@@ -1,0 +1,162 @@
+body {
+  background: #fdc830;
+  background: -webkit-linear-gradient(to right, #f37335, #fdc830);
+  background: linear-gradient(to right, #f37335, #fdc830);
+  font-family: "Dancing Script", cursive;
+}
+.cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 100px auto 10px auto;
+  width: 100%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
+  width: 60%;
+  justify-content: center;
+  align-content: center;
+  border-radius: 30px;
+  background-color: #fff;
+}
+.card > img {
+  width: 90%;
+  height: 350px;
+  border-radius: 15px 15px 30px 30px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 5%;
+  top: -80px;
+  position: relative;
+}
+
+.container {
+  padding: 2px 16px;
+  text-align: center;
+  color: #000;
+}
+@media screen and (max-width: 900px) {
+  .card {
+    width: 100%;
+  }
+}
+
+
+@keyframes flicker {
+  0% {
+    transform: skewX(5deg);
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.2), 0 0 20px rgba(255, 165, 0, 0.2),
+      0 0 60px rgba(255, 165, 0, 0.2), 0 0 80px rgba(255, 165, 0, 0.2);
+  }
+  25% {
+    transform: skewX(-5deg);
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5),
+      0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);
+  }
+  50% {
+    transform: skewX(10deg);
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.3), 0 0 20px rgba(255, 165, 0, 0.3),
+      0 0 60px rgba(255, 165, 0, 0.3), 0 0 80px rgba(255, 165, 0, 0.3);
+  }
+  75% {
+    transform: skewX(-10deg);
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.4), 0 0 20px rgba(255, 165, 0, 0.4),
+      0 0 60px rgba(255, 165, 0, 0.4), 0 0 80px rgba(255, 165, 0, 0.4);
+  }
+  100% {
+    transform: skewX(5deg);
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5),
+      0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);
+  }
+}
+.ml15 {
+  font-weight: 800;
+  font-size: 2.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 0px 5px rgba(15, 6, 4, 0.87);
+  font-family: monospace;
+}
+
+.ml15 .word {
+  display: inline-block;
+  line-height: 1em;
+}
+img:hover {
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(0deg);
+  }
+}
+
+.credit a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 900;
+}
+
+.credit {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+}
+
+
+/* Rangoli design Code */
+
+.container2{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.inner-box{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+.r1{
+	width: 400px;
+	position: absolute;
+	top: -1000px;
+	Left: -10%;
+}
+.r2{
+	width: 400px;
+	position: absolute;
+	top: -1000px;
+	Left: 77%;
+}
