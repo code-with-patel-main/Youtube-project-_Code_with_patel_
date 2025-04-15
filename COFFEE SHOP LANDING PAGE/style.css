@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Nunito+Sans:ital,wght@0,400;0,700;0,800;1,300;1,700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppines',sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-width: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 800;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .text-box{
+    position: relative;
+    max-width: 600px;
+}
+
+.container .text-box h2{
+    color: #333;
+    font-size: 4em;
+    font-weight: 500px;
+}
+
+.container .text-box h2 span{
+    color: #107143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.container.text-box p{
+    color: #333;
+}
+
+.container .text-box a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #107143 ;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.container .img-box{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.container .img-box img{
+    max-width: 380px;
+}
+
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+
+.thumb li img{
+    max-width: 150px; /*Adjust the size as needed*/
+    height: auto;       /*Maintain aspect ration*/
+}
+
+.social{
+    position:absolute;
+    top: 50%;
+    right:30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social li{
+    list-style: none;
+}
+
+
+.social li a{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #107143;
+    clip-path: circle(600px at right 800px);
+}
+
+.coffee-list{
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f8f8;
+}
+
+.coffee-list h2{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.coffee-container{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+.coffee-card{
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    transition: 0.3s ease-in-out;
+}
+
+.coffee-card img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.coffee-card h3{
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #107143;
+}
+
+.coffee-card p{
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.coffee-card:hover{
+    transform: scale(1.05);
+}

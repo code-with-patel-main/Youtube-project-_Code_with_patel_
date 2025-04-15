@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Landing Page - CODE WITH PATEL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <Section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="images/logo.png" class="logo"></a>
+            
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">WHAT'S NEW</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </header>
+
+        <div class="container">
+            <div class="text-box">
+                <h2>Its not just a Coffee <br>Its <span>Moment.</span></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis corrupti voluptatibus eligendi eveniet minima labore odit voluptates iusto officia amet.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div class="img-box">
+                <img src="images/main.png" class="starbucks" >
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="images/1.png" onclick="imgSilder('images/1.png');changeCircleColor('#017143')"></li>
+            <li><img src="images/2.png" onclick="imgSilder('images/2.png');changeCircleColor('#0eb7495')"></li>
+            <li><img src="images/3.png" onclick="imgSilder('images/3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+
+        <ul class="social">
+            <li><a href="#"><img src="https://raw.githubusercontent.com/farazc60/Project-Images/main/starbucks/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="https://raw.githubusercontent.com/farazc60/Project-Images/main/starbucks/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="https://raw.githubusercontent.com/farazc60/Project-Images/main/starbucks/twitter.png" alt=""></a></li>
+        </ul>
+    </Section>
+
+    <section class="coffee-list">
+        <h2>Our Popular Coffees</h2>
+        <div class="coffee-container">
+            <div class="coffee-card">
+                <img src="images/1.png" alt="coffee1">
+                <h3>Carmel Macchiato</h3>
+                <p>Rich Espresso with caramel and milk.</p>
+            </div>
+            <div class="coffee-card">
+                <img src="images/2.png" alt="coffee1">
+                <h3>Carmel Macchiato</h3>
+                <p>Rich Espresso with caramel and milk.</p>
+            </div>
+            <div class="coffee-card">
+                <img src="images/3.png" alt="coffee1">
+                <h3>Carmel Macchiato</h3>
+                <p>Rich Espresso with caramel and milk.</p>
+            </div>
+            <div class="coffee-card">
+                <img src="images/4.png" alt="coffee1">
+                <h3>Carmel Macchiato</h3>
+                <p>Rich Espresso with caramel and milk.</p>
+            </div>
+            <div class="coffee-card">
+                <img src="images/1.png" alt="coffee1">
+                <h3>Carmel Macchiato</h3>
+                <p>Rich Espresso with caramel and milk.</p>
+            </div>
+            <div class="coffee-card">
+                <img src="images/2.png" alt="coffee1">
+                <h3>Carmel Macchiato</h3>
+                <p>Rich Espresso with caramel and milk.</p>
+            </div>
+            <div class="coffee-card">
+                <img src="images/3.png" alt="coffee1">
+                <h3>Carmel Macchiato</h3>
+                <p>Rich Espresso with caramel and milk.</p>
+            </div>
+            <div class="coffee-card">
+                <img src="images/4.png" alt="coffee1">
+                <h3>Carmel Macchiato</h3>
+                <p>Rich Espresso with caramel and milk.</p>
+            </div>
+        </div>
+
+        <!-- same div for other coffee container -->
+    </section>
+
+    <object data="footer.html" width="100%" height="1570px"></object>
+    <script>function imgSilder(anything){ document.querySelector('.starbucks').src=anything}</script>
+    
+</body>
+</html>
