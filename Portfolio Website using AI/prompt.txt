@@ -1,0 +1,5 @@
+Write a prompt to create a modern and beautiful portfolio site (As per my given porfolio website image) landing 
+page which contains navbar, hero section, about us, services and contact us and footer and i want this website 
+using html css and javascript with responsiveness in a single file and use random image from internet and it 
+should be user friendly and contains hover effects and the animations. it should also include light mode and 
+dark mode working properly
