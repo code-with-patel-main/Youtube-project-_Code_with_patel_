@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scramble game  - by Code with patel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to Patel game</h1>
+    <div class="game-box">
+        <h2>Word Scramble</h2>
+        <div class="scrambled" id="scrambled">-----</div>
+        <input type="text" id="guess" placeholder="Type your Answer....">
+        <br>
+        <button onclick="checkAnswer()">Check</button>
+        <button onclick="newWord()">Next</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+
+        const words=["apple", "banana", "orange", "tree", "code", "patel", "school", "coding", "developer"];
+        let currentword="";
+        let scrambled="";
+
+        function shuffle(words)
+        {
+            return words.split('').sort(() => Math.random() - 0.5).join("");
+        }
+
+        function newWord()
+        {
+            currentword = words[Math.floor(Math.random() * words.length)];
+            scrambled = shuffle(currentword);
+            while(scrambled === currentword)
+            {
+                scrambled = shuffle(currentword);
+            }
+            document.getElementById("scrambled").textContent = scrambled;
+            document.getElementById("guess").value = "";
+            document.getElementById("result").textContent = "";
+        }
+
+        function checkAnswer()
+        {
+            const guess=document.getElementById("guess").value.toLowerCase();
+            if(guess === currentword)
+            {
+                document.getElementById("result").textContent="🏆 Correct!!";
+                document.getElementById("result").style.color="Green";
+            }
+            else
+            {
+                document.getElementById("result").textContent="❌ Wrong!!";
+                document.getElementById("result").style.color="Red";
+            }
+        }
+
+        //Start game
+        newWord();
+    </script>
+</body>
+</html>
